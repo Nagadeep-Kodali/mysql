@@ -1,0 +1,22 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: mydevops
+  author: nagadeep
+  description: MySQL server for Debian/Ubuntu.
+  min_ansible_version: 2.4
+  platforms:
+    - name: EL
+      versions:
+        - 6
+        - 7
+        - 8
+    - name: Ubuntu
+      versions:
+        - all
+    - database
+    - mysql
+    - mariadb
+    - db
+    - sql

@@ -1,0 +1,13 @@
+---
+# Variable configuration.
+- include_tasks: variables.yml
+
+# Setup/install tasks.
+- include_tasks: setup-Debian.yml
+  when: ansible_os_family == 'Debian'
+
+# Configure MySQL.
+- include_tasks: install_mysql.yml
+- include_tasks: mysql_dbname.yml
+- include_tasks: mysql_user_passwd.yml
+- include_tasks: start_mysql.yml

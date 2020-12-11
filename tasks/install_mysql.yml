@@ -1,0 +1,11 @@
+---
+- name: installing mysql service and dependencies
+  package:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  loop:
+     _mysql_server
+     _mysql_client
+     _python_mysqldb
+     _libmysqlclient_dev

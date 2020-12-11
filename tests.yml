@@ -1,0 +1,5 @@
+---
+- hosts: directory
+  remote_user: root
+  roles:
+     _mydevops
